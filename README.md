@@ -27,7 +27,7 @@
 
 <p> Focus Timer but is the 2.0 version. </p>
 
-<p align="center"><img src = "assets/project.png" alt="Project image" height="400"></p>
+<p align="center"><img src = "assets/project.gif" alt="Project image" height="400"></p>
 <br><br>
 Project Link - https://celinxt.github.io/Focus-Timer-2.0/
 
