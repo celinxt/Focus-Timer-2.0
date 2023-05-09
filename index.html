@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+    <!-- prettier-ignore -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
+
+    <script src="js/main.js" type="module" defer></script>
+
+    <title>Focus Timer 2.0</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="light-dark-mode">
+        <button id="dark-mode">
+          <img src="assets/images/dark.svg" alt="Dark mode icon" />
+        </button>
+
+        <button id="light-mode" class="hide">
+          <img src="assets/images/light.svg" alt="Light mode icon" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div id="timer-control">
+        <div id="timer">
+          <span id="minutes">25</span>
+          <span id="colons">:</span>
+          <span id="seconds">00</span>
+        </div>
+
+        <div id="controls">
+          <button id="btn-play">
+            <img
+              src="assets/images/controls/play.svg"
+              alt="Button play image"
+              class="play-light" />
+
+            <img
+              src="assets/images/controls/playDark.svg"
+              alt="Button play image"
+              class="play-dark hide" />
+          </button>
+
+          <button id="btn-pause" class="hide">
+            <img
+              src="assets/images/controls/pause.svg"
+              alt="Button pause image"
+              class="pause-light" />
+
+            <img
+              src="assets/images/controls/pauseDark.svg"
+              alt="Button pause image"
+              class="pause-dark hide" />
+          </button>
+
+          <button id="btn-stop">
+            <img
+              src="assets/images/controls/stop.svg"
+              alt="Button stop image"
+              class="stop-light" />
+
+            <img
+              src="assets/images/controls/stopDark.svg"
+              alt="Button stop image"
+              class="stop-dark hide" />
+          </button>
+
+          <button id="btn-add-min">
+            <img
+              src="assets/images/controls/addMin.svg"
+              alt="Button add minutes image"
+              class="add-light" />
+
+            <img
+              src="assets/images/controls/addMinDark.svg"
+              alt="Button add minutes image"
+              class="add-dark hide" />
+          </button>
+
+          <button id="btn-remove-min">
+            <img
+              src="assets/images/controls/removeMin.svg"
+              alt="Button remove minutes image"
+              class="remove-light" />
+
+            <img
+              src="assets/images/controls/removeMinDark.svg"
+              alt="Button remove minutes image"
+              class="remove-dark hide" />
+          </button>
+        </div>
+      </div>
+
+      <div id="btn-sounds">
+        <div id="container-forest">
+          <button id="btn-forest">
+            <img
+              src="assets/images/btn-sounds/forestLight.svg"
+              alt="Button forest image"
+              id="forest"
+              class="forest-unpress" />
+
+            <img
+              src="assets/images/btn-sounds/forestPress.svg"
+              alt="Button forest image"
+              class="forest-press hide" />
+          </button>
+
+          <button id="btn-forest-dark">
+            <img
+              src="assets/images/btn-sounds/forestDark.svg"
+              alt="Button forest image"
+              id="forest-dark"
+              class="forest-dark forest-dark-unpress hide" />
+            <img
+              src="assets/images/btn-sounds/forestPress.svg"
+              alt="Button forest image"
+              class="forest-dark-press hide" />
+          </button>
+        </div>
+
+        <div id="container-rain">
+          <button id="btn-rain">
+            <img
+              src="assets/images/btn-sounds/rainLight.svg"
+              alt="Button rain image"
+              id="rain"
+              class="rain-unpress" />
+
+            <img
+              src="assets/images/btn-sounds/rainPress.svg"
+              alt="Button rain image"
+              class="rain-press hide" />
+          </button>
+
+          <button id="btn-rain-dark">
+            <img
+              src="assets/images/btn-sounds/rainDark.svg"
+              alt="Button rain image"
+              id="rain-dark"
+              class="rain-dark-unpress hide" />
+
+            <img
+              src="assets/images/btn-sounds/rainPress.svg"
+              alt="Button rain image"
+              class="rain-dark-press hide" />
+          </button>
+        </div>
+
+        <div id="container-coffee">
+          <button id="btn-coffee">
+            <img
+              src="assets/images/btn-sounds/coffeeShopLight.svg"
+              alt="Button coffee shop image"
+              id="coffee"
+              class="coffee-unpress" />
+
+            <img
+              src="assets/images/btn-sounds/coffeeShopPress.svg"
+              alt="Button coffee shop image"
+              class="coffee-press hide" />
+          </button>
+
+          <button id="btn-coffee-dark">
+            <img
+              src="assets/images/btn-sounds/coffeeShopDark.svg"
+              alt="Button coffee shop image"
+              id="coffee-dark"
+              class="coffee-dark-unpress hide" />
+
+            <img
+              src="assets/images/btn-sounds/coffeeShopPress.svg"
+              alt="Button coffee shop image"
+              class="coffee-dark-press hide" />
+          </button>
+        </div>
+
+        <div id="container-fire">
+          <button id="btn-fire">
+            <img
+              src="assets/images/btn-sounds/fireplaceLight.svg"
+              alt="Button fireplace image"
+              id="fire"
+              class="fire-light fire-unpress" />
+
+            <img
+              src="assets/images/btn-sounds/fireplacePress.svg"
+              alt="Button fireplace image"
+              class="fire-press hide" />
+          </button>
+
+          <button id="btn-fire-dark">
+            <img
+              src="assets/images/btn-sounds/fireplaceDark.svg"
+              alt="Button fireplace image"
+              id="fire-dark"
+              class="fire-dark-unpress hide" />
+
+            <img
+              src="assets/images/btn-sounds/fireplacePress.svg"
+              alt="Button fireplace image"
+              class="fire-dark-press hide" />
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
